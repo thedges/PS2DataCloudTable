@@ -19,10 +19,55 @@ A configurable LWC to query data cloud info for community/experience site users
 | Query Path | Text | The URL path for the query (default: /services/data/v61.0/ssot/queryv2) |
 
 ## Data Cloud Query
-
+First, use the ??? to design your SQL query to return the data you need from Data Cloud. Then create a JSON object like the following to wrap your SQL query. Copy and paste this in the 'Data Cloud Query' configuration parameter. The following is example:
+```
+{"sql": "SELECT customer_id__c, DataSource__c, DataSourceObject__c, date_created__c, date_modified__c, InternalOrganization__c, status__c, subject__c, workorder_id__c 
+           FROM PublicWorks_Work_Orders__dlm
+          WHERE customer_id__c in (SELECT SourceRecordId__c from UnifiedLinkssotIndividualCcid__dlm WHERE ssot__DataSourceObjectId__c = 'HerokuPostgres_JH_Heroku_Postgres_dfd_customer_publicworks'
+            and UnifiedRecordId__c IN (SELECT UnifiedRecordId__c FROM UnifiedLinkssotIndividualCcid__dlm WHERE SourceRecordId__c = '[[CONTACT_ID]]'))"
+}
+```
 
 ## Columns JSON Definition
 
+
+
+```
+[
+   {
+      "label":"Subject",
+      "fieldName":"subject__c",
+      "sortable":"true",
+      "cellAttributes":{
+         "class":"col-header"
+      }
+   },
+   {
+      "label":"Status",
+      "fieldName":"status__c",
+      "sortable":"true"
+   },
+   {
+      "label":"Work Order ID",
+      "fieldName":"workorder_id__c",
+      "sortable":"true"
+   },
+   {
+      "label":"Date Modified",
+      "fieldName":"date_modified__c",
+      "type":"date",
+      "sortable":"true",
+      "Attributes":{
+         "year":"numeric",
+         "month":"long",
+         "day":"2-digit",
+         "hour":"2-digit",
+         "minute":"2-digit",
+         "second":"2-digit"
+      }
+   }
+]
+```
 
 # Installation Instructions
 
