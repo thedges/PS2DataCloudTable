@@ -29,9 +29,7 @@ First, use the ??? to design your SQL query to return the data you need from Dat
 ```
 
 ## Columns JSON Definition
-
-
-
+For the LWC table component to work, create a [lightning-datatable](https://developer.salesforce.com/docs/component-library/bundle/lightning-datatable/documentation) column definition JSON string per the documentation. A Platform Blackbelt will probably be needed to help out here. This JSON structure defines the fields you want to pull out of the SQL query and what format they should have in the lightning datatable. For the LWC component to work, all fields in the JSON structure MUST have double-quotes around them. 
 ```
 [
    {
