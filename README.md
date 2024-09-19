@@ -13,7 +13,7 @@ A configurable LWC to query data cloud info for community/experience site users
 | Card Title | Text | A name to be displayed at top of component |
 | Icon Name | Text | The SLDS icon name to be displayed at top of component. Refer to following for [SLDS Icons](https://www.lightningdesignsystem.com/icons/) |
 | Hide for zero records | Boolean | Hide the component if no records returned |
-| Columns JSON Definition | Text | The lightning component columns definition string. Refer to following for [SLDS Icons](https://developer.salesforce.com/docs/component-library/bundle/lightning-datatable/documentation) |
+| Columns JSON Definition | Text | The lightning component columns definition string. Refer to following for [lightning-datatable documentation](https://developer.salesforce.com/docs/component-library/bundle/lightning-datatable/documentation) |
 | Data Cloud Query | Text | Data cloud query string |
 | Named Credential | Text | The name of the Named Crednential for data cloud connection |
 | Query Path | Text | The URL path for the query (default: /services/data/v61.0/ssot/queryv2) |
