@@ -1,7 +1,7 @@
 # PS2DataCloudTable
 THIS SOFTWARE IS COVERED BY [THIS DISCLAIMER](https://raw.githubusercontent.com/thedges/Disclaimer/master/disclaimer.txt).
 
-A configurable LWC to query data cloud info for community/experience site users
+[WORK IN PROCESS] A configurable LWC to query data cloud info for community/experience site users
 
 # Sample Image
 ![alt text](https://github.com/thedges/PS2DataCloudTable/blob/main/PS2DataCloudTable.jpg "Sample Photo")
