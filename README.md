@@ -74,15 +74,15 @@ For the LWC table component to work, create a [lightning-datatable](https://deve
   2. Setup a Named Credential connection to Data Cloud following [this guide](https://salesforce.quip.com/tIRvA1yJ8l84) (only accessible by Salesforce)
   3. Drop the **PS2DataCloudTable** Lightning Component on to a community/experience site page.
   4. Configure the Lightning Component by setting the component parameters per above details. Key items to provide:
-     a. Card Title
-     b. Card Icon
-     c. SOQL Query
-     d. JSON Column Definition
-     e. Named Credential name
+     * Card Title
+     * Card Icon
+     * SOQL Query
+     * JSON Column Definition
+     * Named Credential name
   7. Create a Permission Set and provide access to the following:
-     a. To the Named Credential created above (under 'Named Credentials')
-     b. To the External Credential created above (under 'External Credential Principal Access')
-     c. Apex class 'PS2DataCloudTable' (under 'Apex Class Access')
+     * To the Named Credential created above (under 'Named Credentials')
+     * To the External Credential created above (under 'External Credential Principal Access')
+     * Apex class 'PS2DataCloudTable' (under 'Apex Class Access')
   8. Assign your permission set to any users that will access the component
      
 <a href="https://githubsfdeploy.herokuapp.com?owner=thedges&repo=PS2DataCloudTable&ref=main">
