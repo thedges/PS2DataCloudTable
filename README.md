@@ -76,7 +76,7 @@ For the LWC table component to work, create a [lightning-datatable](https://deve
   4. Configure the Lightning Component by setting the component parameters per above details. Key items to provide:
      * Card Title
      * Card Icon
-     * SOQL Query
+     * Data Cloud Query
      * JSON Column Definition
      * Named Credential name
   7. Create a Permission Set and provide access to the following:
